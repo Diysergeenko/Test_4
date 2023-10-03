@@ -34,13 +34,13 @@ video {
   display: flex;
   /* выравнивем контент в нем по вертикали */
   align-items: center;
+  justify-content: space-between;
   padding: 0 160px;
 }
 
 .logo {
   width: 115px;
   height: 100px;
-  margin-right: 20px;
 }
 
 .header_links {
@@ -48,10 +48,6 @@ video {
   /* выравнивем контент в нем по вертикали */
   align-items: center;
   margin-left: 250px;
-}
-
-.lang-selector {
-  margin-left: 300px;
 }
 
 .slide_center::after {
@@ -84,7 +80,7 @@ video {
 }
 
 .lang-selector a {
-  color: azure;
+  color: rgb(53, 77, 45);
   text-decoration: none;
 }
 .slide_links-left {
@@ -125,13 +121,10 @@ img {
   display: inline-block;
 }
 .main-menu-top_first-level {
-  position: relative;
-  margin: 0;
   padding: 0;
   list-style: none;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  text-align: center;
 }
 .main-menu-top_first-item {
   display: inline-block;
@@ -192,11 +185,6 @@ img {
 ul {
   display: block;
   list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
 }
 .aside_techno {
   width: 100vw;
@@ -256,58 +244,4 @@ ul {
   margin-top: 20px;
   margin-left: 161px;
   justify-content: space-between;
-}
-.menu_catalog {
-  width: 100vw;
-  height: 50vh;
-}
-.catalog_row {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  padding: 20px 160px;
-  background-color: azure;
-  justify-content: space-between;
-}
-.catalog_row-titli {
-  margin: 0;
-  font-size: 25px;
-  line-height: 1.25;
-  color: black;
-  text-transform: none;
-}
-.catalog_arrows {
-  margin-left: 12px;
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-}
-.catalog_arrow-disable {
-  opacity: 0.33;
-  cursor: not-allowed;
-}
-
-.catalog_arrow {
-  padding: 0;
-  border: none;
-  text-transform: none;
-  font-family: inherit;
-  background: transparent;
-  height: 40px;
-}
-.catalog_counter {
-  margin: 0;
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 600;
-  margin-left: 12px;
-  margin-right: 12px;
-  color: black;
-}
-.catalog_arrows-right {
-  cursor: pointer;
-}
-.catalog_arrow img {
-  width: 100%;
-  height: 100%;
 }

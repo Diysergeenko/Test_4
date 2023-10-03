@@ -12,39 +12,44 @@
   </head>
 </html>
 <body>
-  <div class="container">
-    <video autoplay="true" loop="loop" preload="auto" muted>
+  <div class="header">
+    <img src=".\icon.png" class="logo" alt="" />
+    <ul
+      class="main-menu-top_first-level"
+      style="display: flex; flex-wrap: wrap-reverse"
+    >
+      <li class="main-menu-top_first-item">
+        <a href="/ru/equipment" class="main-menu-top_first-link"
+          >Оборудование</a
+        >
+      </li>
+      <li class="main-menu-top_first-item">
+        <a href="/ru/technologies" class="main-menu-top_first-link"
+          >Технологии</a
+        >
+      </li>
+      <li class="main-menu-top_first-item">
+        <a href="/ru/address" class="main-menu-top_first-link">Адрес</a>
+      </li>
+      <li class="main-menu-top_first-item">
+        <a href="/ru/contacts" class="main-menu-top_first-link">Контакты</a>
+      </li>
+    </ul>
+    <div class="lang-selector">
+      <span class="lang-selector_item" title="Сайт A-stele">ru</span>
+      <a class="lang-selector_item" href="#en" title="Site  A-stele">en</a>
+    </div>
+  </div>
+  <div class="container" style="position: relative">
+    <video
+      autoplay="true"
+      loop="loop"
+      preload="auto"
+      muted
+      style="position: absolute"
+    >
       <source type="video/mp4" src=".\video.mp4" />
     </video>
-    <div class="header">
-      <img src=".\icon.png" class="logo" alt="" />
-
-      <div class="header_links">
-        <ul class="main-menu-top_first-level">
-          <li class="main-menu-top_first-item">
-            <a href="/ru/equipment" class="main-menu-top_first-link"
-              >Оборудование</a
-            >
-          </li>
-          <li class="main-menu-top_first-item">
-            <a href="/ru/technologies" class="main-menu-top_first-link"
-              >Технологии</a
-            >
-          </li>
-          <li class="main-menu-top_first-item">
-            <a href="/ru/address" class="main-menu-top_first-link">Адрес</a>
-          </li>
-          <li class="main-menu-top_first-item">
-            <a href="/ru/contacts" class="main-menu-top_first-link">Контакты</a>
-          </li>
-        </ul>
-
-        <div class="lang-selector">
-          <span class="lang-selector_item" title="Сайт A-stele">ru</span>
-          <a class="lang-selector_item" href="#en" title="Site  A-stele">en</a>
-        </div>
-      </div>
-    </div>
     <div
       class="slide_content"
       style="position: absolute; top: 315px; margin-top: -160px; left: 0px"
@@ -81,87 +86,5 @@
         нескольких десятков звезд, «соседствующих» с нашим Солнцем.
       </div>
     </div>
-  </div>
-
-  <div class="menu_catalog">
-    <section class="catalog_row">
-      <h3 class="catalog_row-titli">Поставляемая продукция бренда Space</h3>
-      <div class="catalog_arrows">
-        <button
-          type="button"
-          class="catalog_arrow catalog_arrows-left catalog_arrow-disable"
-        >
-          <img
-            width="64"
-            height="64"
-            src="https://img.icons8.com/pastel-glyph/64/1A1A1A/circled-left.png"
-            alt="circled-left"
-          />
-        </button>
-        <span class="catalog_counter"> 1 / 5 </span>
-        <button type="button" class="catalog_arrow catalog_arrows-right">
-          <img
-            width="64"
-            height="64"
-            src="https://img.icons8.com/pastel-glyph/64/000000/circled-right.png"
-            alt="circled-right"
-          />
-        </button>
-      </div>
-      <div
-        class="swiper_container base-slider_slider swiper-container-initialized swiper-container- horizontal"
-      >
-        <div
-          class="swiper-wrapper"
-          style="transform: translate(0px, 0px, 0px); transition-duration: 0ms"
-        >
-          <div class="swiper_slide swiper_slide-active">
-            <img
-              src=".\7795.970.jpeg"
-              class="category-card_img"
-              alt
-              loading="lazy"
-            />
-            <h6 class="category-card_title">Телескоп Space 400/70</h6>
-          </div>
-          <div class="swiper_slide swiper_slide-next">
-            <img
-              src=".\4564.970.jpg"
-              class="category-card_img"
-              alt
-              loading="lazy"
-            />
-            <h6 class="category-card_title">Набор Levenhuk Space MTВ3</h6>
-          </div>
-          <div class="swiper_slide">
-            <img
-              src=".\10984.970.jpg"
-              class="category-card_img"
-              alt
-              loading="lazy"
-            />
-            <h6 class="category-card_title">Телескоп Space Spark 703 AZ</h6>
-          </div>
-          <div class="swiper_slide">
-            <img
-              src=".\10842.970.jpg"
-              class="category-card_img"
-              alt
-              loading="lazy"
-            />
-            <h6 class="category-card_title">Телескоп Space Spark 506 AZ</h6>
-          </div>
-          <div class="swiper_slide">
-            <img
-              src=".\9590.970.jpg"
-              class="category-card_img"
-              alt
-              loading="lazy"
-            />
-            <h6 class="category-card_title">Телескоп Space Spark 506 AZ</h6>
-          </div>
-        </div>
-      </div>
-    </section>
   </div>
 </body>
