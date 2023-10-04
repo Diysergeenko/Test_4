@@ -13,26 +13,19 @@
 </html>
 <body>
   <div class="header">
-    <img src=".\icon.png" class="logo" alt="" />
-    <ul
-      class="main-menu-top_first-level"
-      style="display: flex; flex-wrap: wrap-reverse"
-    >
-      <li class="main-menu-top_first-item">
-        <a href="/ru/equipment" class="main-menu-top_first-link"
-          >Оборудование</a
-        >
+    <img src=".\logo.png" class="logo" alt="" />
+    <ul class="menu" style="display: flex; flex-wrap: wrap-reverse">
+      <li class="menu-item">
+        <a href="/ru/equipment" class="menu-item__navigation">Оборудование</a>
       </li>
-      <li class="main-menu-top_first-item">
-        <a href="/ru/technologies" class="main-menu-top_first-link"
-          >Технологии</a
-        >
+      <li class="menu-item">
+        <a href="/ru/technologies" class="menu-item__navigation">Технологии</a>
       </li>
-      <li class="main-menu-top_first-item">
-        <a href="/ru/address" class="main-menu-top_first-link">Адрес</a>
+      <li class="menu-item">
+        <a href="/ru/address" class="menu-item__navigation">Адрес</a>
       </li>
-      <li class="main-menu-top_first-item">
-        <a href="/ru/contacts" class="main-menu-top_first-link">Контакты</a>
+      <li class="menu-item">
+        <a href="/ru/contacts" class="menu-item__navigation">Контакты</a>
       </li>
     </ul>
     <div class="lang-selector">
@@ -40,7 +33,7 @@
       <a class="lang-selector_item" href="#en" title="Site  A-stele">en</a>
     </div>
   </div>
-  <div class="container" style="position: relative">
+  <div class="section" style="position: relative">
     <video
       autoplay="true"
       loop="loop"
@@ -50,41 +43,16 @@
     >
       <source type="video/mp4" src=".\video.mp4" />
     </video>
-    <div
-      class="slide_content"
-      style="position: absolute; top: 315px; margin-top: -160px; left: 0px"
-    >
-      <div class="slide_main-title" style="margin-top: 0px">
-        Взгляд
-        <br />
-        на звезды
-      </div>
-      <div class="slide_note">
-        <div class="slide_midnightblue">Взгляд</div>
-        <div class="slide_orange">в новый мир</div>
-      </div>
-    </div>
-  </div>
-  <div class="aside_techno">
-    <div class="slide_center">Технологии</div>
-    <div class="slide_techno">
-      Внедряя самые перспективные разработки в оборудование,
-      <br />
-      мы вносим свой вклад в движение прогресса
-    </div>
-    <div class="slide_techno-content">
-      <img src=".\laboratory.jpg" class="cover" alt="" />
-      <div class="slide_techno-laboratory">
-        Возможности телескопов нашей компании позволят понять многие процессы,
-        происходящие на заре существования Вселенной – заглянуть в сами ее
-        истоки.
-        <br />
-        Среди главных задач будущего телескопа – выявление света первых звезд и
-        галактик, которые появились после Большого взрыва.
-        <br />
-        С нашим телескопом можно будет наблюдать планеты, расположенные у
-        нескольких десятков звезд, «соседствующих» с нашим Солнцем.
-      </div>
+    <div class="section-banner">
+      <h3 class="section-banner__title">Новинки</h3>
+      <span class="section-banner__description">
+        Наше оборудование для любых целей
+      </span>
+      <object class="section-banner__buttons">
+        <a href="/refractors.ru" class="banner__buttons">Рефракторы</a>
+        <a href="/reflectors.ru" class="banner__buttons">Рефлекторы</a>
+        <a href="/combined.ru" class="banner__buttons">Комбинированные</a>
+      </object>
     </div>
   </div>
 </body>
