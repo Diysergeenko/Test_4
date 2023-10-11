@@ -14,7 +14,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 135px;
+  padding: 10px 135px;
 }
 .logo {
   width: 95px;
@@ -51,8 +51,8 @@ html {
 
 .profile {
   color: rgb(0, 0, 0);
-  width: 55px;
-  height: 35px;
+  width: 25px;
+  height: 30px;
   background: transparent;
   border: 1.5px solid rgba(8, 8, 8, 0.295);
   outline: none;
@@ -81,6 +81,77 @@ html {
 }
 .menu-item a:hover::after {
   transform: scaleX(1);
+}
+.header .toggle_btn {
+  color: black;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: none;
+}
+/*  RESPONSIVE DESIGN  
+@media (max-width: 992px) {
+  .header .menu,
+  .menu .menu-item {
+    display: none;
+  }
+}*/
+.header .toggle_btn {
+  color: black;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: none;
+}
+
+/*DROPDOWN MENU */
+.dropdown_menu {
+  position: absolute;
+  right: 7rem;
+  top: 75px;
+  width: 250px;
+  background: rgba(53, 115, 131, 0.1);
+  backdrop-filter: blur(4px);
+  border-radius: 25px;
+  overflow: hidden;
+  height: 0;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu.open {
+  height: 13rem;
+  width: 10rem;
+}
+.dropdown_menu .menu-item {
+  width: 100%;
+}
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* RESPONSIVE DESIGN */
+@media (max-width: 1150px) {
+  .header .menu,
+  .menu .menu-item {
+    display: none;
+  }
+}
+@media (max-width: 1150px) {
+  .header .profile {
+    display: none;
+  }
+  .header .toggle_btn {
+    display: block;
+  }
+}
+
+.dropdown_menu {
+  display: block;
+}
+@media (max-width: 550px) {
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
+  }
 }
 .section {
   width: 100vw;
@@ -135,4 +206,65 @@ video {
   background: white;
   border: 1px solid rgb(53, 115, 131);
   margin-top: 30px;
+}
+.base-slider {
+  width: 100vw;
+  height: 70vh;
+}
+.section-slider {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  padding: 0 135px;
+}
+.section-slider__title {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 2.25;
+  color: black;
+  text-transform: none;
+}
+.base-slider__arrows {
+  margin-left: 12px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.base-slider__arrow {
+  padding: 0;
+  border: none;
+  text-transform: none;
+  background: transparent;
+  width: 25px;
+  height: 25px;
+}
+/*Где то тут ошибка* -внизу- */
+.base-slider__counter {
+  margin: 0;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+}
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
 }
