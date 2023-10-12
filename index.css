@@ -246,6 +246,7 @@ video {
   width: 100%;
   display: flex;
   padding: 0 135px;
+  background: rgba(128, 128, 128, 0.103);
 }
 .swiper-slide {
   height: 30vh;
